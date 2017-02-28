@@ -1,0 +1,12 @@
+<!-- Gothic 2 Online automatic generated config file -->
+<GO_Config>
+	<config public=0 serverName="[RU] World of Mordrag" serverPort=28970 maxSlots=50 adminPassword="ga" />
+	<script src="translations.nut" type="client" />
+	<script src="player.nut" type="client" />
+	<script src="engine.nut" type="client" />
+	<script src="chat.nut" type="client" />
+	<script src="additional_scripts/OTDEditor.nut" type="client" />
+	<script src="additional_scripts/guiframework.nut" type="client" />
+	<script src="gui.nut" type="client" />
+	<script src="main.nut" type="server" />
+</GO_Config>
