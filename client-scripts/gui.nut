@@ -15,7 +15,7 @@ ppi = ppi.tointeger();
 // Getting translations
 
 local trans = getTranslations();
-local lang = 2;
+local lang = 0;
 
 //
 
@@ -514,12 +514,12 @@ addEvent("onRender",function()
 
 addEvent("onRespawn",function()
 {
-	//gui_ShowRegistration();
+	gui_ShowRegistration();
 	enableInterface(1,false);
 	enableInterface(2,false);
 	enableInterface(3,false);
 	enableInterface(4,false);
 	setCameraBehindVob(camvob);
-	err_SetText(1);
-	err_Show();
+	//err_SetText(1);
+	//err_Show();
 });
