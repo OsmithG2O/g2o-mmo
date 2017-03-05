@@ -995,3 +995,408 @@
 [info] Listening for connections on 192.168.42.176:28970...
 [downloader] Loading files...
 [downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: the index 'Mysql' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: the index 'Mysql' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+Cannot read file "server-scripts/Mysql/mysql.nut".
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: the index 'MySQL' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'main()' ./server-scripts/Mysql/player.nut line [5]
+[Squirrel] Locals:
+- vargv (ARRAY)
+- this (TABLE)
+[Squirrel] Error runtime: the index 'Mysql' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: Module not found
+[Squirrel] Stack Dump:
+[1]: In function 'main()' ./server-scripts/Mysql/control.nut line [4]
+[Squirrel] Locals:
+- vargv (ARRAY)
+- this (TABLE)
+[Squirrel] Error runtime: the index 'MySQL' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'main()' ./server-scripts/Mysql/player.nut line [5]
+[Squirrel] Locals:
+- vargv (ARRAY)
+- this (TABLE)
+[Squirrel] Error runtime: the index 'Mysql' does not exist
+[Squirrel] Stack Dump:
+[1]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: (sq_mysql_ping) invalid argument at index 0, expecting 'userpointer'
+[Squirrel] Stack Dump:
+[1]: In function 'connect()' ./server-scripts/Mysql/control.nut line [11]
+[2]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- database ("mmo")
+- password ("Pass12")
+- user ("Quarchodron")
+- host ("localhost")
+- this (INSTANCE)
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: (sq_mysql_ping) invalid argument at index 0, expecting 'userpointer'
+[Squirrel] Stack Dump:
+[1]: In function 'connect()' ./server-scripts/Mysql/control.nut line [11]
+[2]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- database ("mmo")
+- password ("Pass12")
+- user ("Quarchodron")
+- host ("localhost")
+- this (INSTANCE)
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[Squirrel] Error runtime: (sq_mysql_ping) invalid argument at index 0, expecting 'userpointer'
+[Squirrel] Stack Dump:
+[1]: In function 'connect()' ./server-scripts/Mysql/control.nut line [11]
+[2]: In function 'onInit()' ./server-scripts/main.nut line [4]
+[Squirrel] Locals:
+- database ("testrey5_g2o")
+- password ("iamgoose")
+- user ("testrey5_g2o")
+- host ("testrey5.beget.tech")
+- this (INSTANCE)
+- this (TABLE)
+[Squirrel] Cannot finish call callback: onInit, expected params count 0
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.176:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.143:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_50147 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|50147
+[join] Nickname has connected with the server 127.0.0.1|50147
+[join] Nickname has joined the server 127.0.0.1|50147
+[connection] Nickname disconnected from server 127.0.0.1|50147
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.143:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_51409 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|51409
+[join] Nickname has connected with the server 127.0.0.1|51409
+[join] Nickname has joined the server 127.0.0.1|51409
+[connection] Nickname lost connection with the server 127.0.0.1|51409
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.143:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_57627 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|57627
+[join] Nickname has connected with the server 127.0.0.1|57627
+[join] Nickname has joined the server 127.0.0.1|57627
+[connection] Nickname lost connection with the server 127.0.0.1|57627
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_61637 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|61637
+[join] Nickname has connected with the server 127.0.0.1|61637
+[join] Nickname has joined the server 127.0.0.1|61637
+[connection] Nickname disconnected from server 127.0.0.1|61637
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_51831 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|51831
+[join] Nickname has connected with the server 127.0.0.1|51831
+[join] Nickname has joined the server 127.0.0.1|51831
+[connection] Nickname disconnected from server 127.0.0.1|51831

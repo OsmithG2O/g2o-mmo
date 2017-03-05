@@ -13,6 +13,7 @@ ppi = ppi.tointeger();
 // Getting translations
 
 local trans = getTranslations();
+local lang = 0;
 
 //
 
@@ -28,17 +29,39 @@ local reg_passfield = createGUIButton(38.41836734693878 * ppi,38.21428571428571 
 local reg_hidepass = createGUIButton(47.70408163265306 * ppi,41.93877551020408 * ppi,2.755102040816327 * ppi,3.418367346938776 * ppi,"INV_TITEL.TGA");
 local reg_login = createGUIButton(38.72448979591837 * ppi,47.6530612244898 * ppi,6.173469387755102 * ppi,3.979591836734694 * ppi,"INV_TITEL.TGA");
 local reg_register = createGUIButton(37.09183673469388 * ppi,52.19387755102041 * ppi,9.693877551020408 * ppi,4.23469387755102 * ppi,"INV_TITEL.TGA");
+local reg_help_01 = createGUIButton(52.04081632653061 * ppi,30.61224489795918 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"MENU_INGAME.TGA");
+local reg_help_02 = createGUIButton(52.04081632653061 * ppi,38.26530612244898 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"MENU_INGAME.TGA");
+local reg_help_03 = createGUIButton(52.04081632653061 * ppi,45.91836734693878 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"MENU_INGAME.TGA");
+local reg_help_04 = createGUIButton(52.04081632653061 * ppi,53.57142857142857 * ppi,19.38775510204082 * ppi,3.571428571428571 * ppi,"MENU_INGAME.TGA");
+local reg_help_05 = createGUIButton(52.04081632653061 * ppi,30.61224489795918 * ppi,19.38775510204082 * ppi,8.673469387755102 * ppi,"MENU_INGAME.TGA");
+local reg_help_01_frame = createGUIButton(52.04081632653061 * ppi,30.61224489795918 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"INV_SLOT_HIGHLIGHTED.TGA");
+local reg_help_02_frame = createGUIButton(52.04081632653061 * ppi,38.26530612244898 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"INV_SLOT_HIGHLIGHTED.TGA");
+local reg_help_03_frame = createGUIButton(52.04081632653061 * ppi,45.91836734693878 * ppi,19.38775510204082 * ppi,7.142857142857143 * ppi,"INV_SLOT_HIGHLIGHTED.TGA");
+local reg_help_04_frame = createGUIButton(52.04081632653061 * ppi,53.57142857142857 * ppi,19.38775510204082 * ppi,3.571428571428571 * ppi,"INV_SLOT_HIGHLIGHTED.TGA");
+local reg_help_05_frame = createGUIButton(52.04081632653061 * ppi,30.61224489795918 * ppi,19.38775510204082 * ppi,8.673469387755102 * ppi,"INV_SLOT_HIGHLIGHTED.TGA");
 
 local regdraw_header = createGUITextButton(servername,"Font_Old_20_White_Hi.TGA",35.1530612244898 * ppi,30.66326530612245 * ppi,255,255,255);
-local regdraw_password = createGUITextButton(trans[0].reg_password.text,"Font_Old_10_White_Hi.TGA",31.88775510204082 * ppi,38.77551020408163 * ppi,255,255,255);
-local regdraw_hidepassword = createGUITextButton(trans[0].reg_hidepassword.text,"Font_Old_10_White_Hi.TGA",38.87755102040816 * ppi,42.60204081632653 * ppi,255,255,255);
+local regdraw_password = createGUITextButton(trans[lang].reg_password.text,"Font_Old_10_White_Hi.TGA",31.88775510204082 * ppi + trans[lang].reg_password.x,38.77551020408163 * ppi,255,255,255);
+local regdraw_hidepassword = createGUITextButton(trans[lang].reg_hidepassword.text,"Font_Old_10_White_Hi.TGA",38.87755102040816 * ppi + trans[lang].reg_hidepassword.x,42.60204081632653 * ppi,255,255,255);
 local regdraw_hidepassword_mark = createGUITextButton("X","Font_Old_20_White_Hi.TGA",48.46938775510204 * ppi,41.78571428571429 * ppi,255,255,255);
-local regdraw_wrongpass = createGUITextButton(trans[0].reg_wrongpassword.text,"Font_Old_10_White_Hi.TGA",35.96938775510204 * ppi,34.94897959183673 * ppi,255,0,0);
-local regdraw_accountde = createGUITextButton(trans[0].reg_accountde.text,"Font_Old_10_White_Hi.TGA",35.35714285714286 * ppi,34.94897959183673 * ppi,255,0,0);
-local regdraw_login = createGUITextButton(trans[0].reg_login.text,"Font_Old_10_White_Hi.TGA",40.30612244897959 * ppi,48.62244897959184 * ppi,255,255,255);
-local regdraw_registration = createGUITextButton(trans[0].reg_registration.text,"Font_Old_10_White_Hi.TGA",38.31632653061224 * ppi,53.36734693877551 * ppi,255,255,255);
-local regdraw_exit = createGUITextButton(trans[0].reg_exit.text,"Font_Old_10_White_Hi.TGA",49.08163265306122 * ppi,55.66326530612245 * ppi,255,255,255);
+local regdraw_wrongpass = createGUITextButton(trans[lang].reg_wrongpassword.text,"Font_Old_10_White_Hi.TGA",35.96938775510204 * ppi + trans[lang].reg_wrongpassword.x,34.94897959183673 * ppi,255,0,0);
+local regdraw_accountde = createGUITextButton(trans[lang].reg_accountde.text,"Font_Old_10_White_Hi.TGA",35.35714285714286 * ppi + trans[lang].reg_accountde.x,34.94897959183673 * ppi,255,0,0);
+local regdraw_login = createGUITextButton(trans[lang].reg_login.text,"Font_Old_10_White_Hi.TGA",40.30612244897959 * ppi + trans[lang].reg_login.x,48.62244897959184 * ppi,255,255,255);
+local regdraw_registration = createGUITextButton(trans[lang].reg_registration.text,"Font_Old_10_White_Hi.TGA",38.31632653061224 * ppi + trans[lang].reg_registration.x,53.36734693877551 * ppi,255,255,255);
+local regdraw_exit = createGUITextButton(trans[lang].reg_exit.text,"Font_Old_10_White_Hi.TGA",49.08163265306122 * ppi + trans[lang].reg_exit.x,55.66326530612245 * ppi,255,255,255);
 regdraw_exit.setActiveColor(255,255,0);
+local regdraw_help_1_01 = createGUITextButton(trans[lang].reg_help_1_01.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_1_01.x,31.27551020408163 * ppi,255,255,255);
+local regdraw_help_1_02 = createGUITextButton(trans[lang].reg_help_1_02.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_1_02.x,33.31632653061224 * ppi,255,255,255);
+local regdraw_help_2_01 = createGUITextButton(trans[lang].reg_help_2_01.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_2_01.x,39.38775510204081 * ppi,255,255,255);
+local regdraw_help_2_02 = createGUITextButton(trans[lang].reg_help_2_02.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_2_02.x,41.42857142857143 * ppi,255,255,255);
+local regdraw_help_2_03 = createGUITextButton(trans[lang].reg_help_2_03.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_2_03.x,43.46938775510204 * ppi,255,255,255);
+local regdraw_help_3_01 = createGUITextButton(trans[lang].reg_help_3_01.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_3_01.x,46.58163265306122 * ppi,255,255,255);
+local regdraw_help_3_02 = createGUITextButton(trans[lang].reg_help_3_02.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_3_02.x,48.62244897959184 * ppi,255,255,255);
+local regdraw_help_4_01 = createGUITextButton(trans[lang].reg_help_4_01.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_4_01.x,54.08163265306122 * ppi,255,255,255);
+local regdraw_help_4_02 = createGUITextButton(trans[lang].reg_help_4_02.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_4_02.x,54.38775510204082 * ppi,255,255,255);
+local regdraw_help_4_03 = createGUITextButton(trans[lang].reg_help_4_03.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_4_03.x,56.42857142857143 * ppi,255,255,255);
+local regdraw_help_4_04 = createGUITextButton(trans[lang].reg_help_4_04.text,"Font_Old_10_White_Hi.TGA",53.41836734693878 * ppi + trans[lang].reg_help_4_04.x,58.46938775510204 * ppi,255,255,255);
+local regdraw_help_4_05 = createGUITextButton(trans[lang].reg_help_4_05.text,"Font_Old_10_White_Hi.TGA",67.80612244897959 * ppi + trans[lang].reg_help_4_05.x,59.89795918367347 * ppi,255,255,255);
 
 local reg_pass_allowed = ["q","Q","w","W","e","E","r","R","t","T","y","Y","u","U","i","I","o","O","p","P","a","A","s","S","d","D","f","F","g","G","h","H","j","J","k","K","l","L","z","Z","X","c","C","v","V","b","B","n","N","m","M","1","2","3","4","5","6","7","8","9","0"];
 
@@ -71,6 +94,28 @@ function gui_ShowRegistration()
 	regdraw_registration.show();
 	regdraw_exit.show();
 	
+	// help
+	reg_help_01.show();
+	reg_help_02.show();
+	reg_help_03.show();
+	reg_help_04.show();
+	reg_help_05.show();
+	reg_help_01_frame.show();
+	reg_help_02_frame.show();
+	reg_help_03_frame.show();
+	reg_help_04_frame.show();
+	reg_help_05_frame.show();
+	
+	regdraw_help_1_01.show();
+	regdraw_help_1_02.show();
+	regdraw_help_2_01.show();
+	regdraw_help_2_02.show();
+	regdraw_help_2_03.show();
+	regdraw_help_3_01.show();
+	regdraw_help_3_02.show();
+	regdraw_help_4_01.show();
+	//
+	
 	reg_password_input.show();
 	
 	reg_open = true;
@@ -95,6 +140,28 @@ function gui_HideRegistration()
 	regdraw_login.hide();
 	regdraw_registration.hide();
 	regdraw_exit.hide();
+	
+	// help
+	reg_help_01.hide();
+	reg_help_02.hide();
+	reg_help_03.hide();
+	reg_help_04.hide();
+	reg_help_05.hide();
+	reg_help_01_frame.hide();
+	reg_help_02_frame.hide();
+	reg_help_03_frame.hide();
+	reg_help_04_frame.hide();
+	reg_help_05_frame.hide();
+	
+	regdraw_help_1_01.hide();
+	regdraw_help_1_02.hide();
+	regdraw_help_2_01.hide();
+	regdraw_help_2_02.hide();
+	regdraw_help_2_03.hide();
+	regdraw_help_3_01.hide();
+	regdraw_help_3_02.hide();
+	regdraw_help_4_01.hide();
+	//
 	
 	reg_password_input.hide();
 	

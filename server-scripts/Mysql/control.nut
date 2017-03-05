@@ -1,7 +1,7 @@
 
  //  -- Mysql Control Script --
 
-
+import("GO_wMySQL");
 
 class MySQL
 {

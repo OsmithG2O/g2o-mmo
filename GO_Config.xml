@@ -2,6 +2,9 @@
 <GO_Config>
 	<config public=0 serverName="[RU] World of Mordrag" serverPort=28970 maxSlots=50 adminPassword="ga" />
 	<script src="translations.nut" type="client" />
+	<script src="Mysql/control.nut" type="server" />
+	<script src="Mysql/player.nut" type="server" />
+	<script src="Player/player.nut" type="server" />
 	<script src="player.nut" type="client" />
 	<script src="engine.nut" type="client" />
 	<script src="chat.nut" type="client" />
