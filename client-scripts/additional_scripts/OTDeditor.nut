@@ -273,7 +273,7 @@ addEvent("onRender",function()
 			sizetex.connect(otdarr[activeTex]);
 			sizetex.hide();
 			sizetex.show();
-			sizetex.setPosition((posd[0] + size[0]) - 150,(posd[1] + size[1]) - 150);
+			sizetex.setPosition((posd.x + size.w) - 150,(posd.y + size.h) - 150);
 		};
 		local pos = getCursorPosition();
 		if (isTap == true)
@@ -286,22 +286,22 @@ addEvent("onRender",function()
 				if (pos.x < oldx)
 				{
 					newx = oldx - pos.x;
-					newx = size[0] - newx;
+					newx = size.w - newx;
 				}
 				else
 				{
 					newx = pos.x - oldx;
-					newx = size[0] + newx;
+					newx = size.w + newx;
 				};
 				if (pos.y < oldy)
 				{
 					newy = oldy - pos.y;
-					newy = size[1] - newy;
+					newy = size.h - newy;
 				}
 				else
 				{
 					newy = pos.y - oldy;
-					newy = size[1] + newy;
+					newy = size.h + newy;
 				};
 				otdarr[activeTex].setSize(newx,newy);
 				oldx = pos.x;
@@ -317,22 +317,22 @@ addEvent("onRender",function()
 				if (oldmuchx > muchx)
 				{
 					newx = oldmuchx - muchx;
-					newx = size[0] - (newx * onecell);
+					newx = size.w - (newx * onecell);
 				}
 				else
 				{
 					newx = muchx - oldmuchx;
-					newx = size[0] + (newx * onecell);
+					newx = size.w + (newx * onecell);
 				};
 				if (oldmuchy > muchy)
 				{
 					newy = oldmuchy - muchy;
-					newy = size[1] - (newy * onecell);
+					newy = size.h - (newy * onecell);
 				}
 				else
 				{
 					newy = muchy - oldmuchy;
-					newy = size[1] + (newy * onecell);
+					newy = size.h + (newy * onecell);
 				};
 				oldmuchx = muchx;
 				oldmuchy = muchy;
@@ -349,22 +349,22 @@ addEvent("onRender",function()
 				if (pos.x < oldx)
 				{
 					newx = oldx - pos.x;
-					newx = posdraw[0] - newx;
+					newx = posdraw.x - newx;
 				}
 				else
 				{
 					newx = pos.x - oldx;
-					newx = posdraw[0] + newx;
+					newx = posdraw.x + newx;
 				};
 				if (pos.y < oldy)
 				{
 					newy = oldy - pos.y;
-					newy = posdraw[1] - newy;
+					newy = posdraw.y - newy;
 				}
 				else
 				{
 					newy = pos.y - oldy;
-					newy = posdraw[1] + newy;
+					newy = posdraw.y + newy;
 				};
 				drawarr[moveDraw].setPosition(newx,newy);
 				oldx = pos.x;
@@ -380,22 +380,22 @@ addEvent("onRender",function()
 				if (oldmuchx > muchx)
 				{
 					newx = oldmuchx - muchx;
-					newx = pt[0] - (newx * onecell);
+					newx = pt.x - (newx * onecell);
 				}
 				else
 				{
 					newx = muchx - oldmuchx;
-					newx = pt[0] + (newx * onecell);
+					newx = pt.x + (newx * onecell);
 				};
 				if (oldmuchy > muchy)
 				{
 					newy = oldmuchy - muchy;
-					newy = pt[1] - (newy * onecell);
+					newy = pt.y - (newy * onecell);
 				}
 				else
 				{
 					newy = muchy - oldmuchy;
-					newy = pt[1] + (newy * onecell);
+					newy = pt.y + (newy * onecell);
 				};
 				oldmuchx = muchx;
 				oldmuchy = muchy;
@@ -413,22 +413,22 @@ addEvent("onRender",function()
 			if (oldmuchx > muchx)
 			{
 				newx = oldmuchx - muchx;
-				newx = pt[0] - (newx * onecell);
+				newx = pt.x - (newx * onecell);
 			}
 			else
 			{
 				newx = muchx - oldmuchx;
-				newx = pt[0] + (newx * onecell);
+				newx = pt.x + (newx * onecell);
 			};
 			if (oldmuchy > muchy)
 			{
 				newy = oldmuchy - muchy;
-				newy = pt[1] - (newy * onecell);
+				newy = pt.y - (newy * onecell);
 			}
 			else
 			{
 				newy = muchy - oldmuchy;
-				newy = pt[1] + (newy * onecell);
+				newy = pt.y + (newy * onecell);
 			};
 			oldmuchx = muchx;
 			oldmuchy = muchy;
@@ -513,8 +513,8 @@ function commandActivateCell()
 			enableWindowsMovement(false);
 			local pos = otdarr[i].getPosition();
 			local size = otdarr[i].getSize();
-			otdarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
-			otdarr[i].setSize((size[0]/onecell) * onecell,(size[1]/onecell) * onecell);
+			otdarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
+			otdarr[i].setSize((size.w/onecell) * onecell,(size.h/onecell) * onecell);
 		};
 	};
 };
@@ -539,8 +539,8 @@ function commandChangeCell(params)
 			{
 				local pos = otdarr[i].getPosition();
 				local size = otdarr[i].getSize();
-				otdarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
-				otdarr[i].setSize((size[0]/onecell) * onecell,(size[1]/onecell) * onecell);
+				otdarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
+				otdarr[i].setSize((size.w/onecell) * onecell,(size.h/onecell) * onecell);
 			};
 		};
 		for (local i = 0; i < draws; ++i)
@@ -548,7 +548,7 @@ function commandChangeCell(params)
 			if (drawarr[i])
 			{
 				local pos = drawarr[i].getPosition();
-				drawarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
+				drawarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
 			};
 		};
 	};
@@ -564,7 +564,7 @@ function commandPrintAll()
 			local pos = otdarr[i].getPosition();
 			local size = otdarr[i].getSize();
 			local texture = otdarr[i].g_Texture;
-			print("createTexture(" + pos[0].tostring() + "," + pos[1].tostring() + "," + size[0].tostring() + "," + size[1].tostring() + ",'" + texture.tostring() + "')");
+			print("createTexture(" + pos.x.tostring() + "," + pos.y.tostring() + "," + size.w.tostring() + "," + size.h.tostring() + ",'" + texture.tostring() + "')");
 		};
 	};
 	for (local i = 0; i < draws; ++i)
@@ -577,7 +577,7 @@ function commandPrintAll()
 			local r = drawarr[i].g_R;
 			local g = drawarr[i].g_G;
 			local b = drawarr[i].g_B;
-			print("createDraw('" + text.tostring() + "'," + font.tostring() + "," + pos[0].tostring() + "," + pos[1].tostring() + "," + r.tostring() + "," + g.tostring() + "," + b.tostring() + ")");
+			print("createDraw('" + text.tostring() + "'," + font.tostring() + "," + pos.x.tostring() + "," + pos.y.tostring() + "," + r.tostring() + "," + g.tostring() + "," + b.tostring() + ")");
 		};
 	};
 };
@@ -617,7 +617,7 @@ function commandSave(params)
 				local pos = otdarr[i].getPosition();
 				local size = otdarr[i].getSize();
 				local texture = otdarr[i].g_Texture;
-				callServerFunc(RELIABLE,"writeInFile","createTexture(" + pos[0] + "," + pos[1] + "," + size[0] + "," + size[1] + "," + "'" + texture + "');");
+				callServerFunc(RELIABLE,"writeInFile","createTexture(" + pos.x + "," + pos.y + "," + size.w + "," + size.h + "," + "'" + texture + "');");
 			};
 		};
 		for (local i = 0; i < draws; ++i)
@@ -630,7 +630,7 @@ function commandSave(params)
 				local r = drawarr[i].g_R;
 				local g = drawarr[i].g_G;
 				local b = drawarr[i].g_B;
-				callServerFunc(RELIABLE,"writeInFile","createDraw('" + text.tostring() + "'," + font.tostring() + "," + pos[0].tostring() + "," + pos[1].tostring() + "," + r.tostring() + "," + g.tostring() + "," + b.tostring() + ")");
+				callServerFunc(RELIABLE,"writeInFile","createDraw('" + text.tostring() + "'," + font.tostring() + "," + pos.x.tostring() + "," + pos.y.tostring() + "," + r.tostring() + "," + g.tostring() + "," + b.tostring() + ")");
 			};
 		};
 	};
@@ -651,8 +651,8 @@ function texCreate(x,y,width,height,tex)
 			{
 				local pos = otdarr[i].getPosition();
 				local size = otdarr[i].getSize();
-				otdarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
-				otdarr[i].setSize((size[0]/onecell) * onecell,(size[1]/onecell) * onecell);
+				otdarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
+				otdarr[i].setSize((size.w/onecell) * onecell,(size.h/onecell) * onecell);
 			};
 		};
 		for (local i = 0; i < draws; ++i)
@@ -660,7 +660,7 @@ function texCreate(x,y,width,height,tex)
 			if (drawarr[i])
 			{
 				local pos = drawarr[i].getPosition();
-				drawarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
+				drawarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
 			};
 		};
 	};
@@ -679,8 +679,8 @@ function drawCreate(text,font,x,y,r,g,b)
 			{
 				local pos = otdarr[i].getPosition();
 				local size = otdarr[i].getSize();
-				otdarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
-				otdarr[i].setSize((size[0]/onecell) * onecell,(size[1]/onecell) * onecell);
+				otdarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
+				otdarr[i].setSize((size.w/onecell) * onecell,(size.h/onecell) * onecell);
 			};
 		};
 		for (local i = 0; i < draws; ++i)
@@ -688,7 +688,7 @@ function drawCreate(text,font,x,y,r,g,b)
 			if (drawarr[i])
 			{
 				local pos = drawarr[i].getPosition();
-				drawarr[i].setPosition((pos[0]/onecell) * onecell,(pos[1]/onecell) * onecell);
+				drawarr[i].setPosition((pos.x/onecell) * onecell,(pos.y/onecell) * onecell);
 			};
 		};
 	};

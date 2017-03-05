@@ -43,9 +43,9 @@ class GUIButton
 	
 	function check()
 	{
+		local pos = getCursorPosition();
 		if (g_Showed == true)
 		{
-			local pos = getCursorPosition();
 			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
 				if (g_Access == true)
@@ -259,9 +259,9 @@ class GUIWindow
 	
 	function check()
 	{
+		local pos = getCursorPosition();
 		if (g_Showed == true)
 		{
-			local pos = getCursorPosition();
 			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
 				if (g_Access == true)
@@ -530,9 +530,9 @@ class GUICheckbox
 	
 	function check()
 	{
+		local pos = getCursorPosition();
 		if (g_Showed == true)
 		{
-			local pos = getCursorPosition();
 			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
 				if (g_Access == true)

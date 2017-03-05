@@ -19,7 +19,13 @@ local en = {
 	reg_help_4_02 = {text = "To change the language, exit the game,", x = 0},
 	reg_help_4_03 = {text = "change the language the launcher, and", x = 0},
 	reg_help_4_04 = {text = "sign back in.", x = 0},
-	reg_help_4_05 = {text = "Hide", x = 0}
+	reg_help_4_05 = {text = "Hide", x = 0},
+	err_header = {text = "Error!", x = 0},
+	err_msg1_01 = {text = "Your nickname is not compliant.", x = 500},
+	err_msg1_02 = {text = "The length of the nickname must be 3-9 characters.", x = 0},
+	err_msg1_03 = {text = "You can use only Latin characters,", x = 470},
+	err_msg1_04 = {text = "without special characters.", x = 600},
+	err_exit = {text = "Exit", x = 0}
 };
 
 local pl = {
@@ -41,7 +47,13 @@ local pl = {
 	reg_help_4_02 = {text = "Zeby zmienic jezyk, zamknij gre,", x = 0},
 	reg_help_4_03 = {text = "zmien jezyk w launcherze, i", x = 0},
 	reg_help_4_04 = {text = "zaloguj sie ponownie.", x = 0},
-	reg_help_4_05 = {text = "Ukryj", x = 40}
+	reg_help_4_05 = {text = "Ukryj", x = 40},
+	err_header = {text = "Blad!", x = 0},
+	err_msg1_01 = {text = "Twoj nick nie jest poprawny.", x = 550},
+	err_msg1_02 = {text = "Dlugosc nicku musi byc w granicy 3-9 znakow.", x = 150},
+	err_msg1_03 = {text = "Mozesz uzyc tylko lacinskich znakow,", x = 400},
+	err_msg1_04 = {text = "bez znakow specjalnych.", x = 700},
+	err_exit = {text = "Wyjdz", x = -50}
 };
 
 
@@ -64,7 +76,13 @@ local ru = {
 	reg_help_4_02 = {text = "Чтобы сменить язык, выйдите", x = 0},
 	reg_help_4_03 = {text = "из игры, смените язык лаунчера", x = 0},
 	reg_help_4_04 = {text = "и войдите в игру.", x = 0},
-	reg_help_4_05 = {text = "Скрыть", x = 0}
+	reg_help_4_05 = {text = "Скрыть", x = 0},
+	err_header = {text = "Ошибка!", x = -100},
+	err_msg1_01 = {text = "Ваш никнейм не соответствует.", x = 500},
+	err_msg1_02 = {text = "Длина никнейма должна быть 3-9 символов.", x = 200},
+	err_msg1_03 = {text = "Вы можете использовать только Латинские буквы,", x = 0},
+	err_msg1_04 = {text = "без использования специальных символов.", x = 200},
+	err_exit = {text = "Выход", x = -50}
 };
 
 trans.append(en);

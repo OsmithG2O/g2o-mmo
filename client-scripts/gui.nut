@@ -85,12 +85,6 @@ local camvob = createVob("camvob.3D", 46587.144531, 2669.584473, -6546.013184, 1
 
 function gui_ShowRegistration()
 {
-	print("Interface");
-	enableInterface(1,false);
-	enableInterface(2,false);
-	enableInterface(3,false);
-	enableInterface(4,false);
-	setCameraBehindVob(camvob);
 	reg_window.show();
 	reg_passfield.show();
 	reg_hidepass.show();
@@ -389,26 +383,143 @@ function gui_regConfirm()
 	}
 }
 
+// Error message before registration window
+
+local err_background = createGUIWindow(26.88775510204082 * ppi,33.16326530612245 * ppi,30.35714285714286 * ppi,22.44897959183673 * ppi,"MENU_INGAME.TGA");
+err_background.access(false);
+local err_exit_button = createGUIButton(38.26530612244898 * ppi,50 * ppi,7.653061224489796 * ppi,4.081632653061224 * ppi,"INV_TITEL.TGA");
+
+local err_header = createGUITextButton(trans[lang].err_header.text,"Font_Old_20_White_Hi.TGA",39.79591836734694 * ppi + trans[lang].err_header.x,34.18367346938776 * ppi,255,0,0);
+local err_string1 = createGUITextButton("","Font_Old_10_White_Hi.TGA",27.90816326530612 * ppi,39.79591836734694 * ppi,255,255,255);
+local err_string2 = createGUITextButton("","Font_Old_10_White_Hi.TGA",27.90816326530612 * ppi,41.83673469387755 * ppi,255,255,255);
+local err_string3 = createGUITextButton("","Font_Old_10_White_Hi.TGA",27.90816326530612 * ppi,43.87755102040816 * ppi,255,255,255);
+local err_string4 = createGUITextButton("","Font_Old_10_White_Hi.TGA",27.90816326530612 * ppi,45.91836734693878 * ppi,255,255,255);
+local err_exit = createGUITextButton(trans[lang].err_exit.text,"Font_Old_10_White_Hi.TGA",40.76530612244898 * ppi + trans[lang].err_exit.x,50.91836734693878 * ppi,255,255,255);
+
+// Error locales
+
+local err_exit_tap = false;
+
+function err_Show()
+{
+	err_background.show();
+	err_exit_button.show();
+	
+	err_header.show();
+	err_string1.show();
+	err_string2.show();
+	err_string3.show();
+	err_string4.show();
+	err_exit.show();
+}
+
+function err_Hide()
+{
+	err_background.hide();
+	err_exit_button.hide();
+	
+	err_header.hide();
+	err_string1.hide();
+	err_string2.hide();
+	err_string3.hide();
+	err_string4.hide();
+	err_exit.hide();
+}
+
+function err_SetText(num)
+{
+	if (num == 1)
+	{
+		err_string1.setText(trans[lang].err_msg1_01.text);
+		local pos1 = err_string1.getPosition();
+		err_string1.setPosition(pos1.x + trans[lang].err_msg1_01.x,pos1.y);
+		err_string2.setText(trans[lang].err_msg1_02.text);
+		local pos2 = err_string2.getPosition();
+		err_string2.setPosition(pos2.x + trans[lang].err_msg1_02.x,pos2.y);
+		err_string3.setText(trans[lang].err_msg1_03.text);
+		local pos3 = err_string3.getPosition();
+		err_string3.setPosition(pos3.x + trans[lang].err_msg1_03.x,pos3.y);
+		err_string4.setText(trans[lang].err_msg1_04.text);
+		local pos4 = err_string4.getPosition();
+		err_string4.setPosition(pos4.x + trans[lang].err_msg1_04.x,pos4.y);
+	}
+}
+
+function gui_errSetButtonsColors()
+{
+	if (err_exit_button.isActive())
+	{
+		err_exit.setColor(255,255,0);
+		err_exit.setActiveColor(255,255,0);
+	}
+	else
+	{
+		err_exit.setColor(255,255,255);
+		err_exit.setActiveColor(255,255,255);
+	}
+}
+
+function gui_errAnimateButtons()
+{
+	if (err_exit_tap == false)
+	{
+		if (err_exit_button.isActive())
+		{
+			local pos = err_exit.getPosition();
+			err_exit.setPosition(pos.x + 10,pos.y + 10);
+			err_exit_tap = true;
+		}
+	}
+	else
+	{
+		local pos = err_exit.getPosition();
+		err_exit.setPosition(pos.x - 10,pos.y - 10);
+		err_exit_tap = false;
+	}
+}
+
+function gui_errConfirm()
+{
+	if (err_exit_button.isActive())
+	{
+		exitGame();
+	}
+}
+
 addEvent("onClick",function(key,x,y,wheel)
 {
 	if (key == "LEFT_DOWN")
 	{
 		gui_regAnimateButtons();
+		
+		gui_errAnimateButtons();
 	}
 	else
 	{
 		gui_regAnimateButtons();
 		gui_regConfirm();
+		
+		gui_errAnimateButtons();
+		gui_errConfirm();
 	}
 });
 
 addEvent("onRender",function()
 {
 	gui_regSetButtonsColors();
+	
+	gui_errSetButtonsColors();
 });
 
 
 addEvent("onRespawn",function()
 {
-	gui_ShowRegistration();
+	//gui_ShowRegistration();
+	enableInterface(1,false);
+	enableInterface(2,false);
+	enableInterface(3,false);
+	enableInterface(4,false);
+	setCameraBehindVob(camvob);
+	err_SetText(1);
+	err_Show();
 });
