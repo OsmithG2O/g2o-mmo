@@ -1,18 +1,10 @@
-
-local MAX_GUIELEMENTS = 500;
+enableDebugMode(true);
 
 local WINDOW_MOVEMENT = true;
 
 local notifyShow = false;
 
-local guiStructure = {};
-
-for (local i = 0; i < MAX_GUIELEMENTS; ++i)
-{
-	guiStructure[i] <-{};
-	guiStructure[i].type <- 0;
-	guiStructure[i].gui <- -1;
-};
+local guiStructure = [];
 
 class GUIButton
 {
@@ -34,12 +26,14 @@ class GUIButton
 	{
 		setTextureVisible(g_Button,true);
 		g_Showed = true;
+		g_Access = true;
 	}
 	
 	function hide()
 	{
 		setTextureVisible(g_Button,false);
 		g_Showed = false;
+		g_ButtonActive = false;
 	}
 	
 	function isShowed()
@@ -49,21 +43,24 @@ class GUIButton
 	
 	function check()
 	{
-		local pos = getCursorPosition();
-		if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
+		if (g_Showed == true)
 		{
-			if (g_Showed == true && g_Access == true)
+			local pos = getCursorPosition();
+			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
-				g_ButtonActive = true;
+				if (g_Access == true)
+				{
+					g_ButtonActive = true;
+				};
+			}
+			else
+			{
+				if (g_Access == true)
+				{
+					g_ButtonActive = false;
+				};
 			};
 		}
-		else
-		{
-			if (g_Showed == true && g_Access == true)
-			{
-				g_ButtonActive = false;
-			};
-		};
 		if (g_ConnectedWindow != -1)
 		{
 			if (g_ConnectedWindow.isMove() == true)
@@ -138,13 +135,13 @@ class GUIButton
 	
 	function getPosition()
 	{
-		local arr = [g_CurX,g_CurY];
+		local arr = {x = g_CurX,y = g_CurY};
 		return arr;
 	}
 	
 	function getSize()
 	{
-		local arr = [g_Width,g_Height];
+		local arr = {w = g_Width,h = g_Height};
 		return arr;
 	}
 	
@@ -162,7 +159,7 @@ class GUIButton
 	
 	function connect(window)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == window)
 			{
@@ -248,6 +245,7 @@ class GUIWindow
 		{
 			g_Showed = false;
 			setTextureVisible(g_Window,false);
+			g_Acitve = false;
 		};
 	}
 	
@@ -261,29 +259,32 @@ class GUIWindow
 	
 	function check()
 	{
-		local pos = getCursorPosition();
-		if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
+		if (g_Showed == true)
 		{
-			if (g_Showed == true && g_Access == true)
+			local pos = getCursorPosition();
+			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
-				for (local i = 0; i < MAX_GUIELEMENTS; ++ i)
+				if (g_Access == true)
 				{
-					if (guiStructure[i].gui != -1)
+					for (local i = 0; i < guiStructure.len(); ++ i)
 					{
-						if (guiStructure[i].type == 2)
+						if (guiStructure[i].gui != -1)
 						{
-							if (guiStructure[i].gui.isActive() == false)
+							if (guiStructure[i].type == 2)
 							{
-								g_Active = true;
-								for (local i = 0; i < MAX_GUIELEMENTS; ++ i)
+								if (guiStructure[i].gui.isActive() == false)
 								{
-									if (guiStructure[i].gui != -1)
+									g_Active = true;
+									for (local i = 0; i < guiStructure.len(); ++ i)
 									{
-										if (guiStructure[i].type == 2)
+										if (guiStructure[i].gui != -1)
 										{
-											if (i != g_ID)
+											if (guiStructure[i].type == 2)
 											{
-												guiStructure[i].gui.setActive(false);
+												if (i != g_ID)
+												{
+													guiStructure[i].gui.setActive(false);
+												};
 											};
 										};
 									};
@@ -291,16 +292,16 @@ class GUIWindow
 							};
 						};
 					};
-				};
-			};
-		}
-		else
-		{
-			if (g_Showed == true && g_Access == true)
+				}
+			}
+			else
 			{
-				g_Active = false;
-			};
-		};
+				if (g_Access == true)
+				{
+					g_Active = false;
+				}
+			}
+		}
 		if (g_Move == true)
 		{
 			if (g_OldX == 2281337228)
@@ -389,7 +390,7 @@ class GUIWindow
 	
 	function getPosition()
 	{
-		local posArr = [g_CurX,g_CurY];
+		local posArr = {x = g_CurX,y = g_CurY};
 		return posArr;
 	}
 	
@@ -402,7 +403,7 @@ class GUIWindow
 	
 	function getSize()
 	{
-		local sizeArr = [g_Width,g_Height];
+		local sizeArr = {w = g_Width,h = g_Height};
 		return sizeArr;
 	}
 	
@@ -477,6 +478,7 @@ class GUICheckbox
 		{
 			g_Showed = false;
 			setTextureVisible(g_Checkbox,false);
+			g_Active = false;
 		};
 	}
 	
@@ -509,7 +511,7 @@ class GUICheckbox
 	{
 		if (g_ConnectedWindow == -1)
 		{
-			for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+			for (local i = 0; i < guiStructure.len(); ++i)
 			{
 				if (guiStructure[i].gui == window)
 				{
@@ -528,21 +530,24 @@ class GUICheckbox
 	
 	function check()
 	{
-		local pos = getCursorPosition();
-		if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
+		if (g_Showed == true)
 		{
-			if (g_Showed == true && g_Access == true)
+			local pos = getCursorPosition();
+			if ((pos.x >= g_CurX && pos.x < (g_CurX + g_Width)) && (pos.y >= g_CurY && pos.y <= (g_CurY + g_Height)))
 			{
-				g_Active = true;
+				if (g_Access == true)
+				{
+					g_Active = true;
+				};
+			}
+			else
+			{
+				if (g_Access == true)
+				{
+					g_Active = false;
+				};
 			};
 		}
-		else
-		{
-			if (g_Showed == true && g_Access == true)
-			{
-				g_Active = false;
-			};
-		};
 		if (g_ConnectedWindow != -1)
 		{
 			if (g_ConnectedWindow.isMove() == true)
@@ -551,7 +556,7 @@ class GUICheckbox
 				{
 					g_OldX = pos.x;
 					g_OldY = pos.y;
-				};
+				}
 				if (g_OldX > pos.x)
 				{
 					g_CurX = g_CurX - (g_OldX - pos.x);
@@ -559,7 +564,7 @@ class GUICheckbox
 				else
 				{
 					g_CurX = g_CurX + (pos.x - g_OldX);
-				};
+				}
 				if (g_OldY > pos.y)
 				{
 					g_CurY = g_CurY - (g_OldY - pos.y);
@@ -567,7 +572,7 @@ class GUICheckbox
 				else
 				{
 					g_CurY = g_CurY + (pos.y - g_OldY);
-				};
+				}
 				g_OldX = pos.x;
 				g_OldY = pos.y;
 				setTexturePosition(g_Checkbox,g_CurX,g_CurY);
@@ -576,14 +581,14 @@ class GUICheckbox
 			{
 				g_OldX = 2281337228;
 				g_OldY = 2281337228;
-			};
+			}
 			if (g_ConnectedWindow.isReset() == true)
 			{
 				g_CurX = g_PosX;
 				g_CurY = g_PosY;
 				setTexturePosition(g_Checkbox,g_CurX,g_CurY);
-			};
-		};
+			}
+		}
 	}
 	
 	function turn(toggle)
@@ -612,13 +617,13 @@ class GUICheckbox
 	
 	function getPosition()
 	{
-		local arr = [g_CurX,g_CurY];
+		local arr = {x = g_CurX,y = g_CurY};
 		return arr;
 	}
 	
 	function getSize()
 	{
-		local arr = [g_Width,g_Height];
+		local arr = {w = g_Width,h = g_Height};
 		return arr;
 	}
 	
@@ -712,6 +717,7 @@ class GUITextButton
 	{
 		setDrawVisible(g_Button,false);
 		g_Showed = false;
+		g_ButtonActive = false;
 	}
 	
 	function isShowed()
@@ -722,22 +728,25 @@ class GUITextButton
 	function check()
 	{
 		local pos = getCursorPosition();
-		if ((pos.x >= g_CurX && pos.x < (g_MaxX)) && (pos.y >= g_CurY && pos.y <= (g_MaxY)))
+		if (g_Showed == true)
 		{
-			if (g_Showed == true && g_Access == true)
+			if ((pos.x >= g_CurX && pos.x < (g_MaxX)) && (pos.y >= g_CurY && pos.y <= (g_MaxY)))
 			{
-				g_ButtonActive = true;
-				setDrawColor(g_Button,g_AR,g_AG,g_AB);
+				if (g_Access == true)
+				{
+					g_ButtonActive = true;
+					setDrawColor(g_Button,g_AR,g_AG,g_AB);
+				};
+			}
+			else
+			{
+				if (g_Access == true)
+				{
+					g_ButtonActive = false;
+					setDrawColor(g_Button,g_R,g_G,g_B);
+				};
 			};
 		}
-		else
-		{
-			if (g_Showed == true && g_Access == true)
-			{
-				g_ButtonActive = false;
-				setDrawColor(g_Button,g_R,g_G,g_B);
-			};
-		};
 		if (g_ConnectedWindow != -1)
 		{
 			if (g_ConnectedWindow.isMove() == true)
@@ -817,7 +826,7 @@ class GUITextButton
 	
 	function connect(window)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == window)
 			{
@@ -887,7 +896,7 @@ class GUITextButton
 	
 	function getPosition()
 	{
-		local arr = [g_CurX,g_CurY];
+		local arr = {x = g_CurX,y = g_CurY};
 		return arr;
 	}
 	
@@ -956,7 +965,7 @@ class GUIInput
 	function close()
 	{
 		clearChatInput();
-		chatInputPosition(50,206 * getChatLines() + 465);
+		//chatInputPosition(50,206 * getChatLines() + 465);
 		chatInputToggle(false);
 		g_Opened = false;
 		if (g_Input.len() > g_MaxLine)
@@ -1116,7 +1125,7 @@ class GUIInput
 	
 	function connect(window)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == window)
 			{
@@ -1240,7 +1249,7 @@ class GUIInput
 	
 	function getPosition()
 	{
-		local arr = [g_CurX,g_CurY];
+		local arr = {x = g_CurX,y = g_CurY};
 		return arr;
 	}
 	
@@ -1393,7 +1402,7 @@ class GUIList
 	
 	function addElement(element)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == element)
 			{
@@ -1401,7 +1410,7 @@ class GUIList
 				{
 					g_Elements.append(guiStructure[i].gui);
 					local pos = guiStructure[i].gui.getPosition();
-					g_ElementsOldPosition.append([pos[0],pos[1]]);
+					g_ElementsOldPosition.append([pos.x,pos.y]);
 				};
 			};
 		};
@@ -1485,7 +1494,7 @@ class GUIList
 	
 	function connect(window)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == window)
 			{
@@ -1641,7 +1650,7 @@ class GUISlider
 		g_WidthHeight = wh;
 		g_Type = type;
 		g_Texture = tex;
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].type == 6)
 			{
@@ -1711,7 +1720,7 @@ class GUISlider
 			if (((pos.y >= posy) && (pos.y <= (posy + g_OneScroll))) && ((pos.x >= g_PosX) && (pos.x <= (g_PosX + g_WidthHeight))))
 			{
 				g_Active = true;
-				for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+				for (local i = 0; i < guiStructure.len(); ++i)
 				{
 					if (guiStructure[i].type == 2 && guiStructure[i].gui.isActive())
 					{
@@ -1730,7 +1739,7 @@ class GUISlider
 			if (((pos.x >= posx) && (pos.x <= (posx + g_OneScroll))) && ((pos.y >= g_PosY) && (pos.y <= (g_PosY + g_WidthHeight))))
 			{
 				g_Active = true;
-				for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+				for (local i = 0; i < guiStructure.len(); ++i)
 				{
 					if (guiStructure[i].type == 2 && guiStructure[i].gui.isActive())
 					{
@@ -1862,7 +1871,7 @@ class GUISlider
 	
 	function connect(window)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].gui == window)
 			{
@@ -2116,7 +2125,7 @@ class GUINotify
 	
 	function getPosition()
 	{
-		local arr = [g_CurX,g_CurY];
+		local arr = {x = g_CurX,y = g_CurY};
 		return arr;
 	}
 	
@@ -2183,79 +2192,51 @@ class GUINotify
 
 function createGUIButton(x,y,width,height,texture)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUIButton(x,y,width,height,texture);
-	guiStructure[id].type = 1;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUIButton(x,y,width,height,texture), type = 1});
+	return guiStructure[guiStructure.len() - 1].gui;
 };
 
 function createGUIWindow(x,y,width,height,texture)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUIWindow(x,y,width,height,texture, id);
-	guiStructure[id].type = 2;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUIWindow(x,y,width,height,texture,guiStructure.len()), type = 2});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUICheckbox(x,y,width,height,texture,texture_active)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUICheckbox(x,y,width,height,texture,texture_active);
-	guiStructure[id].type = 3;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUICheckbox(x,y,width,height,texture,texture_active), type = 3});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUITextButton(text,font,x,y,r,g,b)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUITextButton(text,font,x,y,r,g,b);
-	guiStructure[id].type = 4;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUITextButton(text,font,x,y,r,g,b), type = 4});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUIInput(x,y,r,g,b,max,max_line)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUIInput(x,y,r,g,b,max,max_line);
-	guiStructure[id].type = 5;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUIInput(x,y,r,g,b,max,max_line), type = 5});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUIList(type,max_visible,limited)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUIList(type,max_visible,limited);
-	guiStructure[id].type = 6;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUIList(type,max_visible,limited), type = 6});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUISlider(texture,x,y,max,wh,type,list)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUISlider(texture,x,y,max,wh,type,list);
-	guiStructure[id].type = 7;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUISlider(texture,x,y,max,wh,type,list), type = 7});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
 
 function createGUINotify(x,y,max_x,max_y,time,font,text)
 {
-	local id = getGUIid();
-	guiStructure[id].gui = GUINotify(x,y,max_x,max_y,time,font,text);
-	guiStructure[id].type = 8;
-	return guiStructure[id].gui;
+	local id = guiStructure.append({gui = GUISlider(texture,x,y,max,wh,type,list), type = 8});
+	return guiStructure[guiStructure.len() - 1].gui;
 }
-
-function getGUIid()
-{
-	for (local i = 0; i < MAX_GUIELEMENTS; ++i)
-	{
-		if (guiStructure[i].gui == -1)
-		{
-			return i;
-			break;
-		};
-	};
-};
 
 function enableWindowsMovement(toggle)
 {
@@ -2264,7 +2245,7 @@ function enableWindowsMovement(toggle)
 
 addEvent("onKey",function(key,letter)
 {
-	for (local j = 0; j < MAX_GUIELEMENTS; ++j)
+	for (local j = 0; j < guiStructure.len(); ++j)
 	{
 		if (guiStructure[j].type == 5)
 		{
@@ -2273,7 +2254,7 @@ addEvent("onKey",function(key,letter)
 				clearChatInput();
 				if (key == KEY_BACK)
 				{
-					for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+					for (local i = 0; i < guiStructure.len(); ++i)
 					{
 						if (guiStructure[i].type == 5)
 						{
@@ -2291,7 +2272,7 @@ addEvent("onKey",function(key,letter)
 				}
 				else
 				{
-					for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+					for (local i = 0; i < guiStructure.len(); ++i)
 					{
 						if (guiStructure[i].type == 5)
 						{
@@ -2321,7 +2302,7 @@ addEvent("onKey",function(key,letter)
 
 addEvent("onRender",function()
 {
-	for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+	for (local i = 0; i < guiStructure.len(); ++i)
 	{
 		if (guiStructure[i].type != 0)
 		{
@@ -2334,7 +2315,7 @@ addEvent("onClick",function(key, xpos, ypos, wheel)
 {
 	if (WINDOW_MOVEMENT == true)
 	{
-		for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+		for (local i = 0; i < guiStructure.len(); ++i)
 		{
 			if (guiStructure[i].type == 2)
 			{
@@ -2358,7 +2339,7 @@ addEvent("onClick",function(key, xpos, ypos, wheel)
 			};
 		};
 	};
-	for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+	for (local i = 0; i < guiStructure.len(); ++i)
 	{
 		if (guiStructure[i].type == 2 || guiStructure[i].type == 7)
 		{
@@ -2375,7 +2356,7 @@ addEvent("onClick",function(key, xpos, ypos, wheel)
 			};
 		};
 	};
-	for (local i = 0; i < MAX_GUIELEMENTS; ++i)
+	for (local i = 0; i < guiStructure.len(); ++i)
 	{
 		if (guiStructure[i].type == 3)
 		{

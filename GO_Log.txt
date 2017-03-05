@@ -1400,3 +1400,1315 @@ Cannot read file "server-scripts/Mysql/mysql.nut".
 [join] Nickname has connected with the server 127.0.0.1|51831
 [join] Nickname has joined the server 127.0.0.1|51831
 [connection] Nickname disconnected from server 127.0.0.1|51831
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_54629 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|54629
+[join] Nickname has connected with the server 127.0.0.1|54629
+[join] Nickname has joined the server 127.0.0.1|54629
+[connection] Nickname disconnected from server 127.0.0.1|54629
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_61144 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|61144
+[join] Nickname has connected with the server 127.0.0.1|61144
+[join] Nickname has joined the server 127.0.0.1|61144
+[connection] Nickname disconnected from server 127.0.0.1|61144
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_56489 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|56489
+[join] Nickname has connected with the server 127.0.0.1|56489
+[join] Nickname has joined the server 127.0.0.1|56489
+[connection] Nickname disconnected from server 127.0.0.1|56489
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62033 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62033
+[join] Nickname has connected with the server 127.0.0.1|62033
+[join] Nickname has joined the server 127.0.0.1|62033
+[connection] Nickname disconnected from server 127.0.0.1|62033
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_52656 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|52656
+[join] Nickname has connected with the server 127.0.0.1|52656
+[join] Nickname has joined the server 127.0.0.1|52656
+[connection] Nickname disconnected from server 127.0.0.1|52656
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_60267 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|60267
+[join] Nickname has connected with the server 127.0.0.1|60267
+[join] Nickname has joined the server 127.0.0.1|60267
+[connection] Nickname disconnected from server 127.0.0.1|60267
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62373 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62373
+[join] Nickname has connected with the server 127.0.0.1|62373
+[join] Nickname has joined the server 127.0.0.1|62373
+[connection] Nickname disconnected from server 127.0.0.1|62373
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62378 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62378
+[join] Nickname has connected with the server 127.0.0.1|62378
+[join] Nickname has joined the server 127.0.0.1|62378
+[connection] Nickname disconnected from server 127.0.0.1|62378
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_64199 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|64199
+[join] Nickname has connected with the server 127.0.0.1|64199
+[join] Nickname has joined the server 127.0.0.1|64199
+[connection] Nickname disconnected from server 127.0.0.1|64199
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_49618 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|49618
+[join] Nickname has connected with the server 127.0.0.1|49618
+[join] Nickname has joined the server 127.0.0.1|49618
+[connection] Nickname disconnected from server 127.0.0.1|49618
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_49621 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|49621
+[join] Nickname has connected with the server 127.0.0.1|49621
+[join] Nickname has joined the server 127.0.0.1|49621
+[connection] Nickname disconnected from server 127.0.0.1|49621
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63904 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63904
+[join] Nickname has connected with the server 127.0.0.1|63904
+[join] Nickname has joined the server 127.0.0.1|63904
+[connection] Nickname disconnected from server 127.0.0.1|63904
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_65258 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|65258
+[join] Nickname has connected with the server 127.0.0.1|65258
+[join] Nickname has joined the server 127.0.0.1|65258
+[connection] Nickname disconnected from server 127.0.0.1|65258
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_64714 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|64714
+[join] Nickname has connected with the server 127.0.0.1|64714
+[join] Nickname has joined the server 127.0.0.1|64714
+[connection] Nickname disconnected from server 127.0.0.1|64714
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_57853 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|57853
+[join] Nickname has connected with the server 127.0.0.1|57853
+[join] Nickname has joined the server 127.0.0.1|57853
+[connection] Nickname disconnected from server 127.0.0.1|57853
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_57664 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|57664
+[join] Nickname has connected with the server 127.0.0.1|57664
+[join] Nickname has joined the server 127.0.0.1|57664
+[connection] Nickname disconnected from server 127.0.0.1|57664
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_60279 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|60279
+[join] Nickname has connected with the server 127.0.0.1|60279
+[join] Nickname has joined the server 127.0.0.1|60279
+[connection] Nickname disconnected from server 127.0.0.1|60279
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_51590 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|51590
+[join] Nickname has connected with the server 127.0.0.1|51590
+[join] Nickname has joined the server 127.0.0.1|51590
+[connection] Nickname disconnected from server 127.0.0.1|51590
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_51193 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|51193
+[join] Nickname has connected with the server 127.0.0.1|51193
+[join] Nickname has joined the server 127.0.0.1|51193
+[connection] Nickname disconnected from server 127.0.0.1|51193
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_50020 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|50020
+[join] Nickname has connected with the server 127.0.0.1|50020
+[join] Nickname has joined the server 127.0.0.1|50020
+[connection] Nickname disconnected from server 127.0.0.1|50020
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_51802 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|51802
+[join] Nickname has connected with the server 127.0.0.1|51802
+[join] Nickname has joined the server 127.0.0.1|51802
+[connection] Nickname disconnected from server 127.0.0.1|51802
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63943 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63943
+[join] Nickname has connected with the server 127.0.0.1|63943
+[join] Nickname has joined the server 127.0.0.1|63943
+[connection] Nickname disconnected from server 127.0.0.1|63943
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_57696 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|57696
+[join] Nickname has connected with the server 127.0.0.1|57696
+[join] Nickname has joined the server 127.0.0.1|57696
+[connection] Nickname disconnected from server 127.0.0.1|57696
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62461 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62461
+[join] Nickname has connected with the server 127.0.0.1|62461
+[join] Nickname has joined the server 127.0.0.1|62461
+[connection] Nickname disconnected from server 127.0.0.1|62461
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62465 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62465
+[join] Nickname has connected with the server 127.0.0.1|62465
+[join] Nickname has joined the server 127.0.0.1|62465
+[connection] Nickname disconnected from server 127.0.0.1|62465
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_55553 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|55553
+[join] Nickname has connected with the server 127.0.0.1|55553
+[join] Nickname has joined the server 127.0.0.1|55553
+[connection] Nickname lost connection with the server 127.0.0.1|55553
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_61474 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|61474
+[join] Nickname has connected with the server 127.0.0.1|61474
+[join] Nickname has joined the server 127.0.0.1|61474
+[connection] Nickname disconnected from server 127.0.0.1|61474
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_54437 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|54437
+[join] Nickname has connected with the server 127.0.0.1|54437
+[join] Nickname has joined the server 127.0.0.1|54437
+[connection] Nickname disconnected from server 127.0.0.1|54437
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_60088 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|60088
+[join] Nickname has connected with the server 127.0.0.1|60088
+[join] Nickname has joined the server 127.0.0.1|60088
+[connection] Nickname disconnected from server 127.0.0.1|60088
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62331 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62331
+[join] Nickname has connected with the server 127.0.0.1|62331
+[join] Nickname has joined the server 127.0.0.1|62331
+[connection] Nickname disconnected from server 127.0.0.1|62331
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63387 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63387
+[join] Nickname has connected with the server 127.0.0.1|63387
+[join] Nickname has joined the server 127.0.0.1|63387
+[connection] Nickname disconnected from server 127.0.0.1|63387
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63398 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63398
+[join] Nickname has connected with the server 127.0.0.1|63398
+[join] Nickname has joined the server 127.0.0.1|63398
+[connection] Nickname disconnected from server 127.0.0.1|63398
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_62798 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|62798
+[join] Nickname has connected with the server 127.0.0.1|62798
+[join] Nickname has joined the server 127.0.0.1|62798
+[connection] Nickname disconnected from server 127.0.0.1|62798
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_55532 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|55532
+[join] Nickname has connected with the server 127.0.0.1|55532
+[join] Nickname has joined the server 127.0.0.1|55532
+[connection] Nickname disconnected from server 127.0.0.1|55532
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_56513 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|56513
+[join] Nickname has connected with the server 127.0.0.1|56513
+[join] Nickname has joined the server 127.0.0.1|56513
+[chat] Nickname: adad
+[chat] Nickname: adad
+[chat] Nickname: adad
+[chat] Nickname: ####
+[connection] Nickname disconnected from server 127.0.0.1|56513
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63833 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63833
+[join] Nickname has connected with the server 127.0.0.1|63833
+[join] Nickname has joined the server 127.0.0.1|63833
+[connection] Nickname disconnected from server 127.0.0.1|63833
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_64664 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|64664
+[join] Nickname has connected with the server 127.0.0.1|64664
+[join] Nickname has joined the server 127.0.0.1|64664
+[connection] Nickname disconnected from server 127.0.0.1|64664
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_56942 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|56942
+[join] Nickname has connected with the server 127.0.0.1|56942
+[join] Nickname has joined the server 127.0.0.1|56942
+[connection] Nickname disconnected from server 127.0.0.1|56942
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_56947 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|56947
+[join] Nickname has connected with the server 127.0.0.1|56947
+[join] Nickname has joined the server 127.0.0.1|56947
+[connection] Nickname disconnected from server 127.0.0.1|56947
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_60130 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|60130
+[join] Nickname has connected with the server 127.0.0.1|60130
+[join] Nickname has joined the server 127.0.0.1|60130
+[connection] Nickname disconnected from server 127.0.0.1|60130
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_60141 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|60141
+[join] Nickname has connected with the server 127.0.0.1|60141
+[join] Nickname has joined the server 127.0.0.1|60141
+[connection] Nickname disconnected from server 127.0.0.1|60141
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63626 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63626
+[join] Nickname has connected with the server 127.0.0.1|63626
+[join] Nickname has joined the server 127.0.0.1|63626
+[connection] Nickname disconnected from server 127.0.0.1|63626
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_63634 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|63634
+[join] Nickname has connected with the server 127.0.0.1|63634
+[join] Nickname has joined the server 127.0.0.1|63634
+[connection] Nickname disconnected from server 127.0.0.1|63634
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_65451 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|65451
+[join] Nickname has connected with the server 127.0.0.1|65451
+[join] Nickname has joined the server 127.0.0.1|65451
+[connection] Nickname disconnected from server 127.0.0.1|65451
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_57679 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|57679
+[join] Nickname has connected with the server 127.0.0.1|57679
+[join] Nickname has joined the server 127.0.0.1|57679
+[connection] Nickname disconnected from server 127.0.0.1|57679
+-== Gothic Online Server 0.1b dev 8 ==-
+[info] Loading scripts...
+[config] Server name: [RU] World of Mordrag
+[config] Server port: 28970
+[config] Max slots: 50
+[script] Server scripts:
+- Mysql/control.nut
+- Mysql/player.nut
+- Player/player.nut
+- main.nut
+[script] Client scripts:
+- translations.nut
+- player.nut
+- engine.nut
+- chat.nut
+- additional_scripts/OTDEditor.nut
+- additional_scripts/guiframework.nut
+- gui.nut
+[info] Starting network...
+[info] Listening for connections on 192.168.42.31:28970...
+[downloader] Loading files...
+[downloader] Thread started, waiting for peers.
+[connection] 127.0.0.1_58731 is trying to connect, index: 0
+[connection] Incoming connection: 127.0.0.1|58731
+[join] Nickname has connected with the server 127.0.0.1|58731
+[join] Nickname has joined the server 127.0.0.1|58731
+[connection] Nickname disconnected from server 127.0.0.1|58731

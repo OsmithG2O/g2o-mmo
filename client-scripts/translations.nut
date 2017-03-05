@@ -1,4 +1,3 @@
-
 local trans = [];
 
 local en = {
@@ -24,14 +23,14 @@ local en = {
 };
 
 local pl = {
-	reg_password = {text = "Haslo:", x = 0},
-	reg_hidepassword = {text = "Ukryte haslo", x = 0},
-	reg_wrongpassword = {text = "Zle haslo!", x = 0},
-	reg_accountde = {text = "Konto nie istnieje!", x = 0},
-	reg_login = {text = "Zaloguj", x = 0},
-	reg_registration = {text = "Zarejestruj", x = 0},
-	reg_exit = {text = "Wyjdz", x = 0},
-	reg_help_1_01 = {text = "Maksymalna dС–ugosc hasla", x = 0},
+	reg_password = {text = "Haslo:", x = 100},
+	reg_hidepassword = {text = "Ukryte haslo", x = 100},
+	reg_wrongpassword = {text = "Zle haslo!", x = 200},
+	reg_accountde = {text = "Konto nie istnieje!", x = 150},
+	reg_login = {text = "Zaloguj", x = -50},
+	reg_registration = {text = "Zarejestruj", x = 50},
+	reg_exit = {text = "Wyjdz", x = -80},
+	reg_help_1_01 = {text = "Maksymalna dіugosc hasla", x = 0},
 	reg_help_1_02 = {text = "13 liter.", x = 0},
 	reg_help_2_01 = {text = "Haslo musi miec wprowadzone", x = 0},
 	reg_help_2_02 = {text = "lacinskie litery i ", x = 0},
@@ -42,30 +41,30 @@ local pl = {
 	reg_help_4_02 = {text = "Zeby zmienic jezyk, zamknij gre,", x = 0},
 	reg_help_4_03 = {text = "zmien jezyk w launcherze, i", x = 0},
 	reg_help_4_04 = {text = "zaloguj sie ponownie.", x = 0},
-	reg_help_4_05 = {text = "Ukryj", x = 0}
+	reg_help_4_05 = {text = "Ukryj", x = 40}
 };
 
 
 local ru = {
-	reg_password = {text = "РџР°СЂРѕР»СЊ:", x = 0},
-	reg_hidepassword = {text = "РЎРєСЂС‹С‚СЊ РїР°СЂРѕР»СЊ", x = 0},
-	reg_wrongpassword = {text = "РќРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ!", x = 0},
-	reg_accountde = {text = "РђРєРєР°СѓРЅС‚ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!", x = 0},
-	reg_login = {text = "Р’С…РѕРґ", x = 0},
-	reg_registration = {text = "Р РµРіРёСЃС‚СЂР°С†РёСЏ", x = 0},
-	reg_exit = {text = "Р’С‹С…РѕРґ", x = 0},
-	reg_help_1_01 = {text = "РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РґР»РёРЅР° РїР°СЂРѕР»СЏ", x = 0},
-	reg_help_1_02 = {text = "13 СЃРёРјРІРѕР»РѕРІ.", x = 0},
-	reg_help_2_01 = {text = "РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ РІРІРѕРґРёС‚СЃСЏ", x = 0},
-	reg_help_2_02 = {text = "Р›Р°С‚РёРЅСЃРєРёРјРё СЃРёРјРІРѕР»Р°РјРё Рё", x = 0},
-	reg_help_2_03 = {text = "С‡РёСЃР»Р°РјРё.", x = 0},
-	reg_help_3_01 = {text = "РќРё РІ РєРѕРµРј СЃР»СѓС‡Р°Рµ, РЅРµ РіРѕРІРѕСЂРёС‚Рµ", x = 0},
-	reg_help_3_02 = {text = "РЅРёРєРѕРјСѓ СЃРІРѕР№ РїР°СЂРѕР»СЊ!", x = 0}
-	reg_help_4_01 = {text = "РљР°Рє СЃРјРµРЅРёС‚СЊ СЏР·С‹Рє?", x = 0},
-	reg_help_4_02 = {text = "Р§С‚РѕР±С‹ СЃРјРµРЅРёС‚СЊ СЏР·С‹Рє, РІС‹Р№РґРёС‚Рµ РёР· РёРіСЂС‹,", x = 0},
-	reg_help_4_03 = {text = "СЃРјРµРЅРёС‚Рµ СЏР·С‹Рє Р»Р°СѓРЅС‡РµСЂР°, Рё", x = 0},
-	reg_help_4_04 = {text = "РІРѕР№РґРёС‚Рµ РІ РёРіСЂСѓ.", x = 0},
-	reg_help_4_05 = {text = "РЎРєСЂС‹С‚СЊ", x = 0}
+	reg_password = {text = "Пароль:", x = 0},
+	reg_hidepassword = {text = "Скрыть пароль", x = 0},
+	reg_wrongpassword = {text = "Неверный пароль!", x = 0},
+	reg_accountde = {text = "Аккаунт не существует!", x = 0},
+	reg_login = {text = "Вход", x = 0},
+	reg_registration = {text = "Регистрация", x = 0},
+	reg_exit = {text = "Выход", x = -120},
+	reg_help_1_01 = {text = "Максимальная длина пароля", x = 0},
+	reg_help_1_02 = {text = "13 символов.", x = 0},
+	reg_help_2_01 = {text = "Пароль должен вводится", x = 0},
+	reg_help_2_02 = {text = "Латинскими символами и", x = 0},
+	reg_help_2_03 = {text = "числами.", x = 0},
+	reg_help_3_01 = {text = "Ни в коем случае, не говорите", x = 0},
+	reg_help_3_02 = {text = "никому свой пароль!", x = 0}
+	reg_help_4_01 = {text = "Как сменить язык?", x = 0},
+	reg_help_4_02 = {text = "Чтобы сменить язык, выйдите", x = 0},
+	reg_help_4_03 = {text = "из игры, смените язык лаунчера", x = 0},
+	reg_help_4_04 = {text = "и войдите в игру.", x = 0},
+	reg_help_4_05 = {text = "Скрыть", x = 0}
 };
 
 trans.append(en);
